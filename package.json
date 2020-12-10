@@ -1,0 +1,47 @@
+{
+  "name": "@yz1311/taro-utils",
+  "version": "0.0.33",
+  "description": "taro3工具库",
+  "main": "index.js",
+  "types": "types/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yz1311/taro-utils.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "taro",
+    "taro3",
+    "react-native"
+  ],
+  "author": "yz1311",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yz1311/taro-utils/issues"
+  },
+  "homepage": "https://github.com/yz1311/taro-utils#readme",
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.17",
+    "@types/node": "^14.14.10",
+    "@tarojs/components": "^3.0.11",
+    "@tarojs/taro": "^3.0.11",
+    "react": "^16.10.0",
+    "taro-ui": "3.0.0-alpha.3",
+    "typescript": "^3.5.2",
+    "classnames": "^2.2.6"
+  },
+  "peerDependencies": {
+    "@tarojs/taro": "^3.0.0",
+    "react": "^16.10.0",
+    "taro-ui": "3.0.0-alpha.3",
+    "classnames": "^2.2.6"
+  }
+}

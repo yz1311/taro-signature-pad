@@ -1,0 +1,49 @@
+.yz-list-item {
+  .right-container {
+    padding-right: 5px !important;
+    flex: 1 !important;
+    overflow: hidden !important;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  $at-list-item-horizontal-padding: 20px;
+
+  .at-list__item-container_patch {
+    height: 100%;
+    width: 100%;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+  }
+
+
+  .at-list__item_patch {
+    padding-right: 0px;
+  }
+
+  .item-extra__info_patch {
+    padding-right: 0px !important;
+    text-align: right !important;
+  }
+
+  .item-extra__info__multiline {
+    overflow: hidden !important;
+    white-space: normal !important;
+    text-align: right !important;
+  }
+
+  .item-thumb__info {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    margin-right: $at-list-item-horizontal-padding;
+    align-self: center;
+  }
+}
+
+
+.at-list__item-extra {
+  max-width: initial !important;
+}

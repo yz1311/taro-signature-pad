@@ -1,0 +1,12 @@
+*.[aod]
+*.DS_Store
+.DS_Store
+*Thumbs.db
+*.iml
+.gradle
+.idea
+node_modules
+screenshots
+npm-debug.log
+lib/img/
+lib/*.js.map

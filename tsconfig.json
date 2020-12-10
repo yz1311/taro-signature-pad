@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "module": "es2015",
+    "target": "es2015",
+    "moduleResolution": "node",
+    "jsx": "react",
+    "jsxFactory": "React.createElement",
+    "noImplicitAny": false,
+    "experimentalDecorators": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "watch": false,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "lib": [
+      "es2015.promise",
+      "es2015",
+      "es2016",
+      "dom"
+    ]
+  },
+  "filesGlob": [
+    "components/**/*.ts",
+    "themes/**/*.tsx"
+  ],
+  "exclude": [
+    "build",
+    "node_modules"
+  ]
+}

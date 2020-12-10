@@ -1,0 +1,29 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  flex:1;
+  position:relative;
+  overflow-y:hidden;
+  background-color: white;
+}
+
+.yz-list-view {
+  display: flex;
+  flex-direction: column;
+  flex:1;
+  position:relative;
+  overflow-y:hidden;
+  background-color: white;
+  .yz-list-view__content {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+  }
+  .list-scroll-view {
+    overflow-y: auto;
+    display: flex;
+    flex:1;
+    //padding-top: 20px;
+    position: relative;
+  }
+}
