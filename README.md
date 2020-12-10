@@ -1,53 +1,62 @@
-# taro-utils
-[![npm version](http://img.shields.io/npm/v/@yz1311/taro-utils.svg?style=flat-square)](https://npmjs.org/package/@yz1311/taro-utils "View this project on npm")
-[![npm version](http://img.shields.io/npm/dm/@yz1311/taro-utils.svg?style=flat-square)](https://npmjs.org/package/@yz1311/taro-utils "View this project on npm")
+# taro-signature-pad
+[![npm version](http://img.shields.io/npm/v/@yz1311/taro-signature-pad.svg?style=flat-square)](https://npmjs.org/package/@yz1311/taro-signature-pad "View this project on npm")
+[![npm version](http://img.shields.io/npm/dm/@yz1311/taro-signature-pad.svg?style=flat-square)](https://npmjs.org/package/@yz1311/taro-signature-pad "View this project on npm")
 
-taro3的一些工具函数，主要这对从react native迁移到taro3的用户
+taro的手写签名库
+
+只支持taro3小程序，h5没有做兼容处理，只支持Canvas type="2d"
+
+### 安装
+```
+npm install @yz1311/taro-signature-pad --save
+```
 
 
+### 使用
+```
+import {SignaturePad} from "@yz1311/taro-signature-pad";
 
-### FormData
+...
+//组件默认是100%高宽
 
-小程序是默认不支持FormData对象的，单独有一个url来上传文件，通过这个拓展，可以直接从api接口上传文件
+<Signature
+    className="signature-canvas"
+    ref={signatureRef}
+/>
+```
 
-## useCommonShare
 
-通用的分享hooks
+### 方法
 
-## useNavInfo
+#### isEmpty(): boolean
 
-获取导航信息的hooks
+判断是否签名是空白的
 
-## useMounted
+#### fromDataURL(dataUrl, options, callback): void 
 
-延迟加载组件的hooks
+还原签名数据
 
-## Alert
+* `dataUrl`: 图片的base64数据
+* `options`: 选项
+* `callback`: 回调方法
 
-类RN的Alert组件
+#### toDataURL(type, encoderOptions): string
 
-## CommonUtils
+获取签名数据
 
-常用方法封装
+默认为png图片，实际调用的canvas的toDataURL函数，参考:
 
-## DeviceEventEmitter
+https://developer.mozilla.org/zh-CN/docs/Web/API/HTMLCanvasElement/toDataURL
 
-事件接收和发送方法，类RN api
+#### clear(): void
 
-## InteractionManager
+清空签名数据
 
-类RN api
+#### save(): void
 
-## NavigationHelper
+将签名数据转换为png图片并且保存到系统相册
 
-导航帮助组件
 
-## StorageUtils
-
-存储工具类
-
-## ToastUtils
-
-toast和loading工具类，针对小程序中toast和loading的一些兼容性进行了封装
-
+### 截图
+![](https://tva1.sinaimg.cn/large/0081Kckwgy1gliuxzjhmsg309s0hsn1i.gif)
 
