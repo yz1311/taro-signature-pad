@@ -1,9 +1,4 @@
-import {FC} from "react";
-
-
-export const SignaturePad:FC<{}> = {
-
-};
+import SignaturePad from "../lib/signaturePad";
 
 export {
     SignaturePad,
